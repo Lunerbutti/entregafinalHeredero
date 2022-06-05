@@ -6,9 +6,7 @@ main {
     iframe {
         width: 100%;
     }
-
 }
-
 .suscripcion{
     display: flex;
     flex-direction: row;
@@ -19,13 +17,11 @@ main {
     color: #f2f9f9ea;
     font-size: 20px;
     margin: $margin;
-
     form{
-        color: #f0f8ff;
+        color: #e1d6ee;
     }
-    }
-
-// tabla
+}
+// // tabla
 table{   
     background-color: #ab9fa0ce;
     font-size: 25px;
@@ -50,10 +46,7 @@ table{
      color: #f0f8ff;
      text-decoration: underline;
   }
-
-
-//  fotos de productos
-
+// //  fotos de productos
 //minin
 @mixin sizeprod ($alto, $ancho){
     height: $alto;
@@ -84,7 +77,10 @@ table{
      color: $color-primary;
      transition: all .2s;
  }
-// media query 768
+ .texto{
+     margin-bottom: 0px;
+ }
+// // media query 768
  @media screen and (min-width: 768px){
     table{     
         font-size: 50px;
@@ -120,7 +116,7 @@ table{
         background-image: url(../imagenes/icon.png);
         }
  }
-// Media query 1204
+// // Media query 1204//
  @media screen and (min-width: 1024px){
     .contactenos{
         margin-left: 380px;
@@ -140,10 +136,4 @@ table{
         transform: scale(1, 1.1);
     }
 }
-
-
-
-
-
-
-
+ 

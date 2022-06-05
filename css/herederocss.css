@@ -62,7 +62,11 @@ header {
 
 @media screen and (min-width: 768px) {
   header div {
-    font-weight: 700; } }
+    font-weight: 700; }
+  header h1 {
+    padding-left: 12%; }
+  header h2 {
+    padding-left: 12%; } }
 
 nav {
   display: flex;
@@ -160,10 +164,7 @@ footer {
     transition: all .3s; }
   .botonTrabaja:hover {
     transform: scale(1, 1.2);
-    font-size: 14px; }
-  .centroIcon {
-    display: flex;
-    align-items: center; } }
+    font-size: 14px; } }
 
 main {
   background-image: url("../imagenes/fondo body.jpg");
@@ -184,7 +185,7 @@ main {
   font-size: 20px;
   margin: 0; }
   .suscripcion form {
-    color: #f0f8ff; }
+    color: #e1d6ee; }
 
 table {
   background-color: #ab9fa0ce;
@@ -232,6 +233,9 @@ tbody tr:nth-child(even) {
   font-weight: 300;
   color: #13031C;
   transition: all .2s; }
+
+.texto {
+  margin-bottom: 0px; }
 
 @media screen and (min-width: 768px) {
   table {
