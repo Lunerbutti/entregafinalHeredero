@@ -3,8 +3,7 @@ nav {
     justify-content: space-evenly;
     margin: $margin;
     padding: $padding;
- 
-    li{
+     li{
     display: inline-flexbox;
     transition: all .3s;}
 }
@@ -12,32 +11,28 @@ nav {
     background-color: "$color-primary";
     color: #f0f8ff  ;
 }
-
 nav-pages{
     background-color: "$color-primary"; 
     color: #f0f8ff  ;
     position: sticky;
 }
-
+// Media query 768
 @media screen and (min-width: 768px){
 nav { 
     display: flex;
     justify-content: space-evenly; 
 }
-
-
 .navpages li{
     display: inline;
 }
 }
-
+// Media query 1024
 @media screen and (min-width: 1024px){
     nav{ 
     li:hover{
         transform: scale(1, 1.5) ;
     }
     }
-
     .navpages li:hover{
         transform: scale(1.5, 2);       
     }

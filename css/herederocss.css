@@ -160,7 +160,10 @@ footer {
     transition: all .3s; }
   .botonTrabaja:hover {
     transform: scale(1, 1.2);
-    font-size: 12px; } }
+    font-size: 14px; }
+  .centroIcon {
+    display: flex;
+    align-items: center; } }
 
 main {
   background-image: url("../imagenes/fondo body.jpg");

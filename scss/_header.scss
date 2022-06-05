@@ -4,7 +4,6 @@ header{
     animation-iteration-count: infinite;
     margin: $margin;
     padding: $padding;
-    
     div{ 
         display: flex;
         font-family: 'Josefin Sans', sans-serif;
@@ -20,18 +19,14 @@ header{
             height: 200px;
         }
     }
-    
-}
+    }
 @keyframes correr{
     0% { margin-left: 0px}
     25% { margin-left: -5px;}
     50% { margin-left: -10px;}
     75% { margin-left: -5px;}
     100% { margin-left: 0px;}
-
-
 }
-
 .gridHeader{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -44,13 +39,11 @@ header{
     grid-area: img;
     grid-row-start: 1;
     grid-row-end: 3;
-
   }
   .imgHHome1{
     grid-area: img1;
     grid-row-start: 1;
     grid-row-end: 3;
-
   }
 .menwear{
     grid-area: h2;
@@ -62,18 +55,15 @@ header{
     grid-row-start: 1;
     grid-row-end: 2;
 }
-
-
 .banner {
     width: 100%;
     height: 250px;  
 }
-
+// Media query 768
 @media screen and (min-width: 768px){
     header{
         div{
             font-weight: 700;}
     }
-
 }
     

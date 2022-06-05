@@ -23,10 +23,7 @@ main {
     form{
         color: #f0f8ff;
     }
-    
-
-}
-
+    }
 
 // tabla
 table{   
@@ -48,14 +45,11 @@ table{
   tbody tr:nth-child(even) {
     background-color: #0c500a8e;
   }
-  
-   
- .fila1{
+  .fila1{
      background-color: #02101ea7;
      color: #f0f8ff;
      text-decoration: underline;
- 
- }
+  }
 
 
 //  fotos de productos
@@ -64,32 +58,23 @@ table{
 @mixin sizeprod ($alto, $ancho){
     height: $alto;
     width: $ancho;
-    
-}
-
+    }
  .productos{
     display: inline-flex;
     color: #f0f8ff;
     font-size: 30;
-    
     img{
         @include sizeprod(100px, 150px )
-        
         }
-    
 }
 .precios{
     display: flex;
     flex-direction: column;
-
 }
 .precioAntes{
     color: #ff0000;
     text-decoration: line-through;
-    
 }
-
- 
  .textoHistoria{
      background-image: url(../imagenes/fondotexto.png);
      background-repeat: no-repeat;
@@ -98,9 +83,8 @@ table{
      font-weight: 300;
      color: $color-primary;
      transition: all .2s;
-     
  }
-
+// media query 768
  @media screen and (min-width: 768px){
     table{     
         font-size: 50px;
@@ -116,19 +100,16 @@ table{
         width: 300px;
         transition: all .3s;
     }
-
     .bodyhome{
         display: grid;
         grid-template-columns: 20% 80%;
         grid-template-rows: 50% 50%;
         grid-template-areas: 
         "menu video"
-        "menu texto"
-        ;
+        "menu texto";
     }
     .textoHistoria{
         grid-area: texto;
-
     }
     .video{
         grid-area: video;
@@ -137,16 +118,9 @@ table{
     .navhome{
         grid-area: menu;
         background-image: url(../imagenes/icon.png);
-        // grid-row-start: 1;
-        // grid-row-end: 3;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-evenly;
-        // flex-wrap: wrap;
-    
-    }
-
+        }
  }
+// Media query 1204
  @media screen and (min-width: 1024px){
     .contactenos{
         margin-left: 380px;
@@ -157,13 +131,10 @@ table{
     .productos img:hover{
         transform: scale(1, 1.1);
         transform: translate(50px 10px);
-
     }
     .textoHistoria:hover{ 
         transform: scale(1, 1.1);
-
         color: #030d16;
-
     }
     .video:hover{
         transform: scale(1, 1.1);

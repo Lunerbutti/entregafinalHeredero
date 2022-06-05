@@ -1,4 +1,4 @@
-
+// footer gral
 .contactenos{
     justify-content: end;
      width: 250px;
@@ -8,13 +8,11 @@
      font-size: 50;
      flex-wrap: wrap;
      flex-direction: column;
-     
  }
 .mapa{
     height: 80%;
     width: 100%;
 }
-
 .nuestras-redes{
     margin-top: 40px;
 }
@@ -22,56 +20,39 @@ footer{
     padding: $padding;
     margin: $margin;
     background-image: url(../imagenes/imagen4.PNG);
-   
     color: #e6dde5da;
-   
-
 }
-
-
 // Maps 
-
 $redes: (
     twitter: #339fe2,
     facebook: #1c1cf4,
     instagam: #5d1d85,
     whatsapp: #07aa20,
 );
-
 @each $red, $color in $redes{
     .red-#{$red}{
         background-color: $color;
     }
 }
-
-
 // extend
-
 .icono-redes{
     width: 50px;
     height: 50px;
     padding: 10px;
 }
-
 .red-twitter{
     @extend .icono-redes;
-    
 }
 .red-facebook{
     @extend .icono-redes;
-    
 }
 .red-instagram{
     @extend .icono-redes;
-    
 }
 .red-whatsapp{
     @extend .icono-redes;
-    
 }
-
-
-
+// Media query 768
 @media screen and (min-width: 768px){
     .footer {
         justify-content: space-evenly;
@@ -84,14 +65,13 @@ $redes: (
     .icono{
         display: flex;
         flex-direction: column;
-        
         justify-content: space-evenly;
-
-    }
+        }
     .nuestras-redes{
         margin-top: 0px;
     }
 }
+// Media query 1024
 @media screen and (min-width: 1024px){
     .footer {
         justify-content: space-evenly;
@@ -105,12 +85,11 @@ $redes: (
         transition: all .3s;
     }
     .botonTrabaja:hover{
-       
         transform: scale(1, 1.2);
-        font-size: 12px;
-        
-    
-    } 
+        font-size: 14px;
+        } 
+    .centroIcon{
+        display: flex;
+        align-items: center;
+    }    
 }
-
-
