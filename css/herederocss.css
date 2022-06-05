@@ -18,18 +18,6 @@ header {
       width: 100%;
       height: 200px; }
 
-@keyframes correr {
-  0% {
-    margin-left: 0px; }
-  25% {
-    margin-left: -5px; }
-  50% {
-    margin-left: -10px; }
-  75% {
-    margin-left: -5px; }
-  100% {
-    margin-left: 0px; } }
-
 .gridHeader {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -67,6 +55,19 @@ header {
     padding-left: 12%; }
   header h2 {
     padding-left: 12%; } }
+
+@media screen and (min-width: 1024px) {
+  @keyframes correr {
+    0% {
+      margin-left: 0px; }
+    25% {
+      margin-left: -3px; }
+    50% {
+      margin-left: -7px; }
+    75% {
+      margin-left: -3px; }
+    100% {
+      margin-left: 0px; } } }
 
 nav {
   display: flex;
@@ -232,7 +233,7 @@ tbody tr:nth-child(even) {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 300;
   color: #13031C;
-  transition: all .2s; }
+  transition: all .5s; }
 
 .texto {
   margin-bottom: 0px; }
